@@ -1,0 +1,9 @@
+{
+    "name": "chirag/psr-tutorial",
+    "description": "PHP Namespace PSR-4 Tutorial",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
