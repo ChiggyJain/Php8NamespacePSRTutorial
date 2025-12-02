@@ -6,6 +6,10 @@ use App\Controllers\UserController;
 use App\Controllers\ProductController;
 use App\AliasExample\AliasDemo;
 use App\Utils\Logger;
+use function App\Helpers\uppercase;
+use function App\Helpers\lowercase;
+use const App\Helpers\VERSION;
+use const App\Helpers\AUTHOR;
 
 echo "=== Controller Outputs ===" . PHP_EOL;
 
@@ -23,3 +27,11 @@ $aliasDemo->run();
 echo PHP_EOL . "=== Logger Example ===" . PHP_EOL;
 
 Logger::log("PSR-4 autoloading works!");
+
+echo PHP_EOL . "=== Helper Functions Example ===" . PHP_EOL;
+echo "uppercase(chirag):".uppercase("chirag").PHP_EOL;
+echo "lowercase(CHIRAG):".lowercase("CHIRAG").PHP_EOL;
+
+echo PHP_EOL . "=== Helper Constants Example ===" . PHP_EOL;
+echo "VERSION:".VERSION.PHP_EOL;
+echo "AUTHOR:".AUTHOR.PHP_EOL;
