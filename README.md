@@ -1,1 +1,1 @@
-Namespace tutorial with examples using PHP8.
+Namespace using PSR tutorial with examples using PHP8.
